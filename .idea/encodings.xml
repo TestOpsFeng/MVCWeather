@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it/mvcweather/adapter/MyBaseAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it/mvcweather/adapter/TimeAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it/mvcweather/been/DayData.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it/mvcweather/been/NowData.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it/mvcweather/been/TimeData.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it/mvcweather/model/HomeModel.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it/mvcweather/model/IHomeModel.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it/mvcweather/model/ValueCallBack.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it/mvcweather/presenter/HomePresenter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it/mvcweather/utils/Constant.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it/mvcweather/utils/HttpCallBack.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it/mvcweather/utils/OkHttpManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/list_time.xml" charset="UTF-8" />
+  </component>
+</project>
