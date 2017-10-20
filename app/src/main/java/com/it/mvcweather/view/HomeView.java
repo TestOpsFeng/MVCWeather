@@ -24,8 +24,6 @@ public class HomeView extends Activity implements IHomeView {
     private ViewPager viewpager;
     private IHomePresenter presenter;
     private TabLayout tab_layout;
-    private MyBaseAdapter timeAdapter;
-    private DayAdapter dayAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +41,8 @@ public class HomeView extends Activity implements IHomeView {
         tab_layout.setupWithViewPager(viewpager);
         tab_layout.getTabAt(0).setText("Time");
         tab_layout.getTabAt(1).setText("Day");
+        tab_layout.getTabAt(2).setText("Life");
+//        tab_layout.getTabAt(3).setText("City");
     }
 
     private void findWidget() {

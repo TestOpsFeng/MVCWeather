@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:text="风力"/>
+        <TextView
+            android:id="@+id/tv_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:text=" 2级"/>
+        <ImageView
+            android:id="@+id/iv_wind"
+            android:layout_toLeftOf="@id/tv_wind"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/wind"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:text="紫外线"/>
+
+
+        <TextView
+            android:id="@+id/tv_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:text="   中"/>
+
+        <ImageView
+            android:id="@+id/iv_light"
+            android:layout_toLeftOf="@id/tv_light"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/light"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:text="降水概率"/>
+
+
+        <TextView
+            android:id="@+id/tv_rain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:text="50%"/>
+
+        <ImageView
+            android:id="@+id/iv_rain"
+            android:layout_toLeftOf="@id/tv_rain"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/rain"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:text="空气湿度"/>
+
+
+        <TextView
+            android:id="@+id/tv_sky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:text="60%"/>
+
+        <ImageView
+            android:id="@+id/iv_sky"
+            android:layout_toLeftOf="@id/tv_sky"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/sky"/>
+    </RelativeLayout>
+</LinearLayout>
