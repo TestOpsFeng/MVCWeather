@@ -5,7 +5,5 @@ package com.it.mvcweather.presenter;
  */
 public interface IHomePresenter {
     void getNowData();
-    void getTimeData();
-    void getDayData();
-    void getCityData();
+    void setViewPager();
 }

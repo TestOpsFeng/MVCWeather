@@ -1,10 +1,10 @@
 package com.it.mvcweather.presenter;
 
+import android.content.Context;
 import android.util.Log;
 
-import com.it.mvcweather.been.DayData;
+import com.it.mvcweather.adapter.MyPagerAdapter;
 import com.it.mvcweather.been.NowData;
-import com.it.mvcweather.been.TimeData;
 import com.it.mvcweather.model.HomeModel;
 import com.it.mvcweather.model.IHomeModel;
 import com.it.mvcweather.model.ValueCallBack;
@@ -17,6 +17,7 @@ public class HomePresenter implements IHomePresenter{
 
     private IHomeView iHomeView;
     private IHomeModel iHomeModel;
+
     public HomePresenter(IHomeView iMainView) {
         this.iHomeView = iMainView;
         iHomeModel = new HomeModel();
@@ -34,30 +35,11 @@ public class HomePresenter implements IHomePresenter{
         });
     }
 
-    @Override
-    public void getTimeData() {
-        iHomeModel.getTimeData(new ValueCallBack() {
-            @Override
-            public void getData(Object obj) {
-                TimeData timeData = (TimeData) obj;
-                iHomeView.showTimePager(timeData);
-            }
-        });
-    }
 
     @Override
-    public void getDayData() {
-        iHomeModel.getDayData(new ValueCallBack() {
-            @Override
-            public void getData(Object obj) {
-                DayData dayData = (DayData) obj;
-                iHomeView.showDayPager(dayData);
-            }
-        });
+    public void setViewPager() {
+        MyPagerAdapter pagerAdapter = new MyPagerAdapter((Context) iHomeView,iHomeModel);
+        iHomeView.showViewPager(pagerAdapter);
     }
 
-    @Override
-    public void getCityData() {
-
-    }
 }
